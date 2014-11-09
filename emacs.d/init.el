@@ -8,3 +8,6 @@
 
 ;; Show column numbers by defaul
 (setq column-number-mode t)
+
+;; Spelling - probationary...
+(setq ispell-program-name "/usr/local/bin/ispell")
