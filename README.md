@@ -1,0 +1,3 @@
+# Emacs Configuration
+
+Very basic so far...
