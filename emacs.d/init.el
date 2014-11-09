@@ -11,3 +11,11 @@
 
 ;; Spelling - probationary...
 (setq ispell-program-name "/usr/local/bin/ispell")
+
+;; Markdown
+(add-to-list 'load-path "~/.emacs.d/markdown/")
+(autoload 'markdown-mode "markdown-mode"
+  "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.txt\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
