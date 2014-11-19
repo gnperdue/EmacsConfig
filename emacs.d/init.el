@@ -2,11 +2,16 @@
 (setq inferior-lisp-program "sbcl")
 (load (expand-file-name "~/quicklisp/slime-helper.el"))
 
+;; SLIME set-up
+(require 'slime-autoloads)
+(slime-setup '(slime-fancy))
+(global-set-key (kbd "C-c s") 'slime-selector)
+
 ;; Set tabs to spaces, then set tab to 4 spaces (marks)
 (setq-default indent-tabs-mode nil)
 (setq tab-stop-list (number-sequence 4 200 4))
 
-;; Show column numbers by defaul
+;; Show column numbers by default
 (setq column-number-mode t)
 
 ;; Spelling - probationary...
