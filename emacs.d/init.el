@@ -1,5 +1,8 @@
 ;; SBCL set-up
-(setq inferior-lisp-program "sbcl")
+(setq inferior-lisp-program "sbcl"
+      lisp-indent-function 'common-lisp-indent-function
+      slime-complete-symbol-function 'slime-fuzzy-complete-symbol
+      slime-startup-animation t)
 (load (expand-file-name "~/quicklisp/slime-helper.el"))
 
 ;; SLIME set-up

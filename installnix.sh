@@ -4,13 +4,20 @@
 # If they do, archvie them into _bck files. Links to
 # a `.emacs.d` doesn't seem to work for emacs.
 
+# Handle `.emacs`
 if [ -e $HOME/.emacs ]; then
-  mv $HOME/.emacs $HOME/.bak_emacs
+  if [ -e $HOME/.bak_emacs ]; then
+    rm -vf $HOME/.bak_emacs
+  fi
+  mv -v $HOME/.emacs $HOME/.bak_emacs
 fi
+# cp ${PWD}/emacs.emacs $HOME/.emacs
 
+# Handle `.emacs.d`
 if [ -e $HOME/.emacs.d ]; then
-  mv $HOME/.emacs.d $HOME/.bak_emacs.d
+  if [ -e $HOME/.bak_emacs.d ]; then
+    rm -rvf $HOME/.bak_emacs.d
+  fi
+  mv -v $HOME/.emacs.d $HOME/.bak_emacs.d
 fi
-
-# ln -s ${PWD}/emacs.emacs $HOME/.emacs
-cp -r ${PWD}/emacs.d $HOME/.emacs.d
+cp -rv ${PWD}/emacs.d $HOME/.emacs.d
