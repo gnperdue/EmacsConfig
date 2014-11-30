@@ -11,6 +11,7 @@
 (defvar required-packages
   '(magit
     yasnippet
+    elpy
     ) "a list of packages that must be installed at launch")
 
 ;; Method to check if all required packages are installed
