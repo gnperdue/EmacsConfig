@@ -1,3 +1,7 @@
+;; Basic customization - make sure this runs last by using a `hook`
+(add-hook 'after-init-hook '(lambda()
+                             (load "~/.emacs.d/gnp-noexternals.el")))
+
 ;; SBCL set-up
 (setq inferior-lisp-program "sbcl"
       lisp-indent-function 'common-lisp-indent-function
@@ -35,3 +39,6 @@
   (comment-or-uncomment-region (line-beginning-position) (line-end-position)))
 (global-set-key (kbd "C-c /") 'toggle-comment-on-line)
 (set-face-foreground 'font-lock-comment-face "blue4")
+
+;; Other custom packages
+(load "~/.emacs.d/gnp-loadpackages.el")
