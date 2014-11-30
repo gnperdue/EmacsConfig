@@ -21,5 +21,6 @@ if [ -e $HOME/.emacs.d ]; then
     rm -rvf $HOME/.bak_emacs.d_$DAT
   fi
   mv -v $HOME/.emacs.d $HOME/.bak_emacs.d_$DAT
+  rm -rfv $HOME/.emacs.d
 fi
 cp -rv ${PWD}/emacs.d $HOME/.emacs.d
