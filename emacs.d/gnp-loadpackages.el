@@ -14,5 +14,8 @@
 ;;                             (setq yas-dont-activate t)))
 
 ;; Python stuff
+(require 'elpy)
 (elpy-enable)
 (elpy-use-ipython)
+
+
