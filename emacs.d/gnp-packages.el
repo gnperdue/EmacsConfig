@@ -12,6 +12,7 @@
   '(magit
     yasnippet
     elpy
+    web-mode
     ) "a list of packages that must be installed at launch")
 
 ;; Method to check if all required packages are installed
