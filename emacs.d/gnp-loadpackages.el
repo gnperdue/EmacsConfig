@@ -15,8 +15,11 @@
 
 ;; Python stuff
 (require 'elpy)
+;; Check the Elpy config with M-x elpy-config
+(setq elpy-rpc-python-command "python3")
 (elpy-enable)
-(elpy-use-ipython)
+;; Use C-c C-c to activate interactive interpreter
+(setq python-shell-interpreter "ipython3")
 
 ;; Web stuff
 (require 'web-mode)
