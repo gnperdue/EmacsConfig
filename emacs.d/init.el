@@ -38,7 +38,13 @@
   (interactive)
   (comment-or-uncomment-region (line-beginning-position) (line-end-position)))
 (global-set-key (kbd "C-c /") 'toggle-comment-on-line)
-(set-face-foreground 'font-lock-comment-face "blue4")
+(set-face-foreground 'font-lock-comment-face "blue")
+
+;; Delete trailing whitespace
+(add-hook 'local-write-file-hooks
+          (lambda ()
+            (delete-trailing-whitespace)
+            nil))
 
 ;; Other custom packages
 (load "~/.emacs.d/gnp-loadpackages.el")
