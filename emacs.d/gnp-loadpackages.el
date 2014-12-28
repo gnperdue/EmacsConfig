@@ -60,3 +60,7 @@
 ;; JS
 (require 'js2-mode)
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+
+;; 3d Design
+(autoload 'scad-mode "scad-mode" "Major mode for editing SCAD code." t)
+(add-to-list 'auto-mode-alist '("\\.scad$" . scad-mode))
