@@ -9,3 +9,6 @@
 (global-set-key (kbd "C-c <up>") 'windmove-up)
 (global-set-key (kbd "C-c <right>") 'windmove-right)
 (global-set-key (kbd "C-c <left>") 'windmove-left)
+
+;; Customize makefile-mode
+(add-to-list 'auto-mode-alist '("\\Makefile.*\\'" . makefile-mode))
