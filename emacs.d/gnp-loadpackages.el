@@ -49,7 +49,7 @@
 ;; See http://web-mode.org, because I may need to set css, json, etc.
 ;; Also note, the Apple Terminal only "supports" 8 colors
 ;;  black, red, green, yellow, blue, magenta, cyan, white
-;; iTerm2 is an option to consider...
+;; Check available colors with `M-x list-colors-display`
 (set-face-attribute 'web-mode-doctype-face nil :foreground "magenta")
 (set-face-attribute 'web-mode-html-tag-face nil :foreground "cyan")
 (set-face-attribute 'web-mode-html-tag-bracket-face nil :foreground "yellow")
