@@ -32,7 +32,7 @@
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
-;; Comment function (sort of...)
+;; Comment function (sort of...) - `M-;` to comment a region
 (defun toggle-comment-on-line ()
   "comment or uncomment current line"
   (interactive)
