@@ -48,3 +48,6 @@
 
 ;; Other custom packages
 (load "~/.emacs.d/gnp-loadpackages.el")
+
+;; `M-x set-fill-column` to change
+(setq default-fill-column 79)
