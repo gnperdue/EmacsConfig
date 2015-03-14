@@ -20,10 +20,11 @@
 ;; Python stuff
 (require 'elpy)
 ;; Check the Elpy config with M-x elpy-config
-(setq elpy-rpc-python-command "python3")
+;; - This assumes we are using python3 _only_!
+(setq elpy-rpc-python-command "python")
 (elpy-enable)
 ;; Use C-c C-c to activate interactive interpreter
-(setq python-shell-interpreter "ipython3")
+(setq python-shell-interpreter "ipython")
 ;; remap some functions - C-z is usually "suspend frame"
 (global-unset-key "\C-z")  
 (global-set-key (kbd "C-z <down>") 'elpy-nav-forward-block)
