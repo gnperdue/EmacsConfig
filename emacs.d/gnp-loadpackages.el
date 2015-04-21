@@ -26,6 +26,8 @@
 ;; - This assumes we are using python3 _only_!
 (setq elpy-rpc-python-command "python")
 (elpy-enable)
+;; Having some trouble with rope and anaconda...
+(setq elpy-rpc-backend "jedi")
 ;; Use C-c C-c to activate interactive interpreter
 (setq python-shell-interpreter "ipython")
 ;; remap some functions - C-z is usually "suspend frame"
