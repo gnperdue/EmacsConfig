@@ -1,6 +1,7 @@
 # Emacs Configuration
 
-Very basic so far... Note, here I assume I am always working with Emacs version 24+.
+Very basic so far... Note, here I assume I am always working with Emacs 
+version 24+.
 
 ## Major Modes
 
@@ -9,6 +10,7 @@ Very basic so far... Note, here I assume I am always working with Emacs version 
 ## Useful References
 
 * [Emacs from Scratch](http://toumorokoshi.github.io/emacs-from-scratch-part-2-package-management.html)
+* [emacs-for-clojure](https://github.com/flyingmachine/emacs-for-clojure)
 
 ## Useful Notes
 
